@@ -1,0 +1,10 @@
+  /////////////////////////////////////////////////
+  //
+  // Display page uids in the page tree
+
+options {
+  pageTree {
+    showPageIdWithTitle = 1
+  }
+}
+  // Display page uids in the page tree

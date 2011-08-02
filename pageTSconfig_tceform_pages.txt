@@ -1,0 +1,12 @@
+  ///////////////////////////
+  //
+  // TCEFORM
+
+TCEFORM {
+  pages {
+      // Disable alias field of the page record
+    alias.disabled = 1
+    content_from_pid.disabled = 1
+  }
+}
+  // TCEFORM

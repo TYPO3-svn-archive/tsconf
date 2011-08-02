@@ -4,94 +4,95 @@ if (!defined ('TYPO3_MODE'))
   die ('Access denied.');
 }
 
+  $extIconPath = t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/';
+
+  $TCA['pages']['columns']['module']['config']['items'][] =
+     array('Flag', 'flg_black', $extIconPath . 'flag-black.png');
   $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Flag', 'flg_black', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/flag-black.png');
+     array('Flag', 'flg_blue', $extIconPath . 'flag-blue.png');
   $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Flag', 'flg_blue', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/flag-blue.png');
+     array('Flag', 'flg_green', $extIconPath . 'flag-green.png');
   $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Flag', 'flg_green', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/flag-green.png');
+     array('Flag', 'flg_red', $extIconPath . 'flag-red.png');
   $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Flag', 'flg_red', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/flag-red.png');
-  $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Flag', 'flg_yellow', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/flag-yellow.png');
+     array('Flag', 'flg_yellow', $extIconPath . 'flag-yellow.png');
 
   $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Folder', 'fld_brown', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-brown.png');
+     array('Folder', 'fld_brown', $extIconPath . 'folder-brown.png');
   $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Folder', 'fld_green', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-green.png');
+     array('Folder', 'fld_green', $extIconPath . 'folder-green.png');
   $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Folder', 'fld_cyan', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-cyan.png');
+     array('Folder', 'fld_cyan', $extIconPath . 'folder-cyan.png');
   $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Folder', 'fld_blue', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-blue.png');
+     array('Folder', 'fld_blue', $extIconPath . 'folder-blue.png');
   $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Folder', 'fld', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder.png');
+     array('Folder', 'fld', $extIconPath . 'folder.png');
   $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Folder', 'fld_violet', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-violet.png');
+     array('Folder', 'fld_violet', $extIconPath . 'folder-violet.png');
   $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Folder', 'fld_red', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-red.png');
+     array('Folder', 'fld_red', $extIconPath . 'folder-red.png');
   $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Folder', 'fld_orange', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-orange.png');
+     array('Folder', 'fld_orange', $extIconPath . 'folder-orange.png');
   $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Folder', 'fld_yellow', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-yellow.png');
+     array('Folder', 'fld_yellow', $extIconPath . 'folder-yellow.png');
 
   $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Folder', 'fld_bkmrk', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-bookmark.png');
+     array('Folder', 'fld_bkmrk', $extIconPath . 'folder-bookmark.png');
   $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Folder', 'fld_dev', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-development.png');
+     array('Folder', 'fld_dev', $extIconPath . 'folder-development.png');
   $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Folder', 'fld_docs', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-documents.png');
+     array('Folder', 'fld_docs', $extIconPath . 'folder-documents.png');
   $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Folder', 'fld_down', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-downloads.png');
+     array('Folder', 'fld_down', $extIconPath . 'folder-downloads.png');
   $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Folder', 'fld_fvrts', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-favorites.png');
+     array('Folder', 'fld_fvrts', $extIconPath . 'folder-favorites.png');
   $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Folder', 'fld_imprtt', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-important.png');
+     array('Folder', 'fld_imprtt', $extIconPath . 'folder-important.png');
   $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Folder', 'fld_locked', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-locked.png');
+     array('Folder', 'fld_locked', $extIconPath . 'folder-locked.png');
   $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Folder', 'fld_remote', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-remote.png');
+     array('Folder', 'fld_remote', $extIconPath . 'folder-remote.png');
   $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Folder', 'fld_sound', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-sound.png');
+     array('Folder', 'fld_sound', $extIconPath . 'folder-sound.png');
   $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Folder', 'fld_tar', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-tar.png');
+     array('Folder', 'fld_tar', $extIconPath . 'folder-tar.png');
   $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Folder', 'fld_txt', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-txt.png');
+     array('Folder', 'fld_txt', $extIconPath . 'folder-txt.png');
   $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Folder', 'fld_video', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-video.png');
+     array('Folder', 'fld_video', $extIconPath . 'folder-video.png');
+
+  $TCA['pages']['columns']['module']['config']['items'][] = 
+     array('Library', 'library', $extIconPath . 'library.png');
+  $TCA['pages']['columns']['module']['config']['items'][] = 
+     array('Template', 'tsconf', $extIconPath . 'template.gif');
 
 
-  $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Library', 'library', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/library.png');
-  $TCA['pages']['columns']['module']['config']['items'][] = 
-     array('Template', 'tsconf', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/template.gif');
-
-  $ICON_TYPES['flg_black']	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/flag-black.png');
-  $ICON_TYPES['flg_blue']	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/flag-blue.png');
-  $ICON_TYPES['flg_green']	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/flag-green.png');
-  $ICON_TYPES['flg_red']	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/flag-red.png');
-  $ICON_TYPES['flg_yellow']	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/flag-yellow.png');
-  $ICON_TYPES['fld_blue']	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-blue.png');
-  $ICON_TYPES['fld_bkmrk']	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-bookmark.png');
-  $ICON_TYPES['fld_brown']	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-brown.png');
-  $ICON_TYPES['fld_cyan']	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-cyan.png');
-  $ICON_TYPES['fld_dev']	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-development.png');
-  $ICON_TYPES['fld_docs']	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-documents.png');
-  $ICON_TYPES['fld_down']	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-downloads.png');
-  $ICON_TYPES['fld_fvrts']	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-favorites.png');
-  $ICON_TYPES['fld_green']	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-green.png');
-  $ICON_TYPES['fld_imprtt']	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-important.png');
-  $ICON_TYPES['fld_locked']	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-locked.png');
-  $ICON_TYPES['fld_orange']	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-orange.png');
-  $ICON_TYPES['fld']		= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder.png');
-  $ICON_TYPES['fld_red']	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-red.png');
-  $ICON_TYPES['fld_remote']	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-remote.png');
-  $ICON_TYPES['fld_sound']	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-sound.png');
-  $ICON_TYPES['fld_tar']	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-tar.png');
-  $ICON_TYPES['fld_txt']	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-txt.png');
-  $ICON_TYPES['fld_video']	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-video.png');
-  $ICON_TYPES['fld_violet']	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-violet.png');
-  $ICON_TYPES['fld_yellow']	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/folder-yellow.png');
-  $ICON_TYPES['library']	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/library.png');
-  $ICON_TYPES['tsconf']    	= array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/template.gif');
-
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-flg_black',  $extIconPath . 'flag-black.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-flg_blue',   $extIconPath . 'flag-blue.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-flg_green',  $extIconPath . 'flag-green.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-flg_red',    $extIconPath . 'flag-red.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-flg_yellow', $extIconPath . 'flag-yellow.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-fld_blue',   $extIconPath . 'folder-blue.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-fld_bkmrk',  $extIconPath . 'folder-bookmark.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-fld_brown',  $extIconPath . 'folder-brown.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-fld_cyan',   $extIconPath . 'folder-cyan.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-fld_dev',    $extIconPath . 'folder-development.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-fld_docs',   $extIconPath . 'folder-documents.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-fld_down',   $extIconPath . 'folder-downloads.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-fld_fvrts',  $extIconPath . 'folder-favorites.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-fld_green',  $extIconPath . 'folder-green.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-fld_imprtt', $extIconPath . 'folder-important.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-fld_locked', $extIconPath . 'folder-locked.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-fld_orang',  $extIconPath . 'folder-orange.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-fld',        $extIconPath . 'folder.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-fld_red',    $extIconPath . 'folder-red.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-fld_remote', $extIconPath . 'folder-remote.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-fld_sound',  $extIconPath . 'folder-sound.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-fld_tar',    $extIconPath . 'folder-tar.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-fld_txt',    $extIconPath . 'folder-txt.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-fld_video',  $extIconPath . 'folder-video.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-fld_violet', $extIconPath . 'folder-violet.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-fld_yellow', $extIconPath . 'folder-yellow.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-library',    $extIconPath . 'library.png');
+  t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-tsconf',     $extIconPath . 'template.gif');
 ?>

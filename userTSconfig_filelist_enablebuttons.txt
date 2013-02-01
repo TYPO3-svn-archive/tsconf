@@ -1,0 +1,12 @@
+  ///////////////////////////
+  //
+  // Enable all buttons at the bottom of a file list form
+
+options {
+  file_list {
+    enableDisplayBigControlPanel  = activated
+    enableDisplayThumbnails       = activated
+    enableClipBoard               = activated
+  }
+}
+  // Enable all buttons at the bottom of a file list form

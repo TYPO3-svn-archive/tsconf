@@ -1,0 +1,13 @@
+  /////////////////////////////////////////////////
+  //
+  // Adding the admin panel
+
+admPanel {
+  enable {
+    edit = 1
+    preview = 1
+    cache = 1
+  }
+  hide = 0
+}
+  // Adding the admin panel

@@ -1,0 +1,20 @@
+  ///////////////////////////
+  //
+  // TCEFORM
+
+TCEFORM {
+  tt_content {
+    header_layout {
+      label = LLL:EXT:tsconf/locallang_tsConfig.php:tceform.tt_content.header_layout
+        // Move \'layout\' to \'header\'
+      altLabels {
+        0   = LLL:EXT:tsconf/locallang_tsConfig.php:tceform.tt_content.header_layout.0
+        2   = LLL:EXT:tsconf/locallang_tsConfig.php:tceform.tt_content.header_layout.2
+        3   = LLL:EXT:tsconf/locallang_tsConfig.php:tceform.tt_content.header_layout.3
+        100 = LLL:EXT:tsconf/locallang_tsConfig.php:tceform.tt_content.header_layout.100
+      }
+      removeItems = 1, 4, 5
+    }
+  }
+}
+  // TCEFORM

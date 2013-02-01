@@ -1,0 +1,85 @@
+1.0.1
+  12-03-20
+  Improvement
+  * #34858: Usage of $ICON_TYPES is deprecated since 4.4.
+
+1.0.0
+  New feature
+  12-02-23
+  * X new icons:  application-exit, applications-development, applications-internet, application-rss+xml,
+                  call-start, call-stop, camera-photo, chronometer, code-class, code-context, configure,
+                  dialog-cancel, dialog-close, dialog-ok-applay, dialog-password, edit-bomb, emblem-favorite,
+                  emblem-important, games-highscores, help-hint, home-mdk, media-optical-recordable,
+                  office-calendar, preferences-system, roll, security-high, security-low, security-medium,
+                  speaker, status-unknown, tool-animator, user-trash, view-conversation-balloon, view-filter
+
+0.1.3
+  11-05-05
+  Improvements
+  * 27 new icons: flags, folders and library
+
+0.1.2
+  11-03-07
+  New feature
+  * Page tree: TypoScript template icon
+
+0.1.1
+  11-02-27
+  Improvement
+  * Extension title is moved from tsConf to tsConfig (search engine optimization)
+
+0.1.0
+  11-02-26
+  New Features
+  * Module web list: activate Extended view and Show clipboard by default
+  * Module file list: activate Extended view, Display thumbnails and Show clipboard by default
+
+0.0.7
+  11-02-22
+  Corporate Design
+  * Netzmacher icon is moved to TYPO3 icon
+
+0.0.6
+  11-01-26
+  Improvement
+  * Added to user TSconf
+    * options.clearCache.pages 
+
+0.0.5
+  11-01-20
+  Bugfix
+  * Proper Manual 
+
+0.0.4
+  11-01-19
+  Improvement
+  * extkey moved from my_tsconf to tsconf
+  * page and user TSconf can be configured per item by the extension manager
+  Publishing
+
+0.0.3
+  11-01-19
+  Improvement
+  * extkey moved from my_usertsconf to my_tsconf
+  * page TSconf moved from ext_tables.php to pageTSconfig.txt
+  * user TSconf moved from ext_tables.php to userTSconfig.txt
+  * page and user TSconf can be disabled by the extension manager
+  * Added
+    * mod.web_layout.menu.function.0 = 0 (Quick Edit)
+    * mod.web_layout.menu.function.3 = 0 (Page Information)
+    * TCEFORM.pages.alias.disabled = 1
+    * TCEFORM.pages.content_from_pid.disabled = 1
+    * TCEFORM.tt_content.header_layout: new labels
+    * TCEFORM.tt_content.header_layout.removeItems = 1, 4, 5
+
+0.0.2
+  11-01-19
+  Improvement
+  * Added
+    * options.clearCache.pages 
+    * options.clearCache.all
+
+0.0.1
+  11-01-19
+  Dirk Wildt  <http://wildt.at.die-netzmacher.de>
+  * Initial Release

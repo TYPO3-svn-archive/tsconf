@@ -1,0 +1,23 @@
+  # cat=basic/enable; type=boolean; label=Web page with reduced menu: Recommended: Quick Edit and Page Information will be removed.
+page_mod_web_layout_menu_function = 1
+
+  # cat=basic/enable; type=boolean; label=Web list form with enabled buttons: Recommended: Will be enabled by default: [Extended view] and [Show clipboard]. [Localization view] won't be overridden. You need TYPO3 >= 4.5.
+page_mod_web_list_enableButtons = 1
+
+  # cat=basic/enable; type=boolean; label=File list form with enabled buttons: Recommended: Will be enabled by default: [Extended view], [Display thumbnails] and [Show clipboard].  You need TYPO3 >= 4.5.
+user_options_filelist_enableButtons = 1
+
+  # cat=basic/enable; type=boolean; label=Proper TCE form for pages: Recommended: Fields alias and contend_from_pid will be disabled.
+page_tceform_pages = 1
+
+  # cat=basic/enable; type=boolean; label=Proper TCE form for tt_content: Recommended: Reduce headers from seven to four. Proper translation for headers.
+page_tceform_ttconent = 1
+
+  # cat=basic/enable; type=boolean; label=AdminPanel: Recommended: The backend user will haven a adminPanel in the frontend.
+user_adminpanel = 1
+
+  # cat=basic/enable; type=boolean; label=Enable cache cleaning: Recommended: The backend user is allowed to clean the whole TYPO3 cache. A thunderbolt - the cache icon - will be displayed in the right top corner.
+user_options_cache = 1
+
+  # cat=basic/enable; type=boolean; label=Pagetree with uids: Recommended: The items in the pagetree will displayed with their uids.
+user_options_pagetreeuid = 1

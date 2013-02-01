@@ -1,3 +1,10 @@
+1.1.0
+  13-02-01
+  Improvement
+  * #45079: Downgrade for TYPO3 < 4.4
+            Effected file:
+            * ext_tables.php
+
 1.0.1
   12-03-20
   Improvement

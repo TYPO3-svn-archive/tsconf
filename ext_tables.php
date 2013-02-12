@@ -116,6 +116,9 @@ $TCA['pages']['columns']['module']['config']['items'][] = array('Games', 'highsc
 $TCA['pages']['columns']['module']['config']['items'][] = array('Games', 'roll', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/roll.png');
 
 $TCA['pages']['columns']['module']['config']['items'][] = 
+   array('jQuery', 'jquery', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/jquery.gif');
+
+$TCA['pages']['columns']['module']['config']['items'][] = 
    array('Library', 'library', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/library.png');
 
 $TCA['pages']['columns']['module']['config']['items'][] = array('System', 'appl-dev', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/applications-development.png');
@@ -131,7 +134,11 @@ $TCA['pages']['columns']['module']['config']['items'][] = array('System', 'stat-
 $TCA['pages']['columns']['module']['config']['items'][] = array('System', 'trash', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/user-trash.png');
 
 $TCA['pages']['columns']['module']['config']['items'][] = 
-   array('Template', 'tsconf', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/template.gif');
+   array('TYPO3', 'belayout', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/backend_layout.gif');
+$TCA['pages']['columns']['module']['config']['items'][] = 
+   array('TYPO3', 'tsconf', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/template.gif');
+$TCA['pages']['columns']['module']['config']['items'][] = 
+   array('TYPO3', 'typo3', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/typo3.png');
 
 
   // SWITCH  : TYPO3 version
@@ -202,8 +209,13 @@ switch( true )
     $ICON_TYPES['pages'] = array('fld_violet' => $extIconPath . 'folder-violet.png');
     $ICON_TYPES['pages'] = array('fld_yellow' => $extIconPath . 'folder-yellow.png');
 
+    $ICON_TYPES['pages'] = array('jquery' => $extIconPath . 'jQuery.gif');
+
     $ICON_TYPES['pages'] = array('library' => $extIconPath . 'library.png');
+
+    $ICON_TYPES['pages'] = array('belayout' => $extIconPath . 'backend_layout.gif');
     $ICON_TYPES['pages'] = array('tsconf' => $extIconPath . 'template.gif');
+    $ICON_TYPES['pages'] = array('typo3' => $extIconPath . 'typo3.png');
     break;
   default:
     // #34858, 120320, dwildt
@@ -270,8 +282,14 @@ switch( true )
     t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-fld_violet', '../typo3conf/ext/tsconf/ext_icons/folder-violet.png');
     t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-fld_yellow', '../typo3conf/ext/tsconf/ext_icons/folder-yellow.png');
 
+    t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-jquery', '../typo3conf/ext/tsconf/ext_icons/jQuery.gif');
+    
     t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-library', '../typo3conf/ext/tsconf/ext_icons/library.png');
+    
+    t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-belayout', '../typo3conf/ext/tsconf/ext_icons/backend_layout.gif');
     t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-tsconf', '../typo3conf/ext/tsconf/ext_icons/template.gif');
+    t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-typo3', '../typo3conf/ext/tsconf/ext_icons/typo3.png');
+
     break;    
 }
   // SWITCH  : TYPO3 version

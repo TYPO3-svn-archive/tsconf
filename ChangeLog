@@ -1,3 +1,14 @@
+1.1.1
+  13-02-12
+  Features
+  * #i0001: New icons: backend_layout, jQuery and TYPO3
+            Effected files:
+            * ext_tables.php
+            * ext_icons
+              * backend_layout.gif
+              * jQuery.gif
+              * typo3.png
+
 1.1.0
   13-02-01
   Improvement

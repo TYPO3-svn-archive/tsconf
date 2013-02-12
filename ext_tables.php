@@ -116,7 +116,7 @@ $TCA['pages']['columns']['module']['config']['items'][] = array('Games', 'highsc
 $TCA['pages']['columns']['module']['config']['items'][] = array('Games', 'roll', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/roll.png');
 
 $TCA['pages']['columns']['module']['config']['items'][] = 
-   array('jQuery', 'jquery', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/jquery.gif');
+   array('jQuery', 'jquery', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/jQuery.gif');
 
 $TCA['pages']['columns']['module']['config']['items'][] = 
    array('Library', 'library', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icons/library.png');

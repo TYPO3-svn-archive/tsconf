@@ -1,19 +1,19 @@
-  # cat=edit area - content/100; type=boolean; label=Proper TCE form for tt_content: Recommended: Reduce headers from seven to four. Proper translation for headers.
+  # cat=edit area - content/100; type=boolean; label=Reduce headers: Recommended: Reduce headers from seven to four. Proper translation for headers.
 page_tceform_ttconent = 1
 
-  # cat=edit area - page/101; type=boolean; label=Proper TCE form for pages: Recommended: Fields alias and contend_from_pid will be disabled.
+  # cat=edit area - page/101; type=boolean; label=Simplify page properties: Recommended: Fields alias and contend_from_pid will be disabled.
 page_tceform_pages = 1
 
   # cat=edit area - templates/102; type=boolean; label=Big form fields: Recommended: TypoScript templates: Display include static templates with place for upto 40 items and an enhanced width. 
 tca_systemplate = 1
 
-  # cat=module file/100; type=boolean; label=File list form with enabled buttons: Recommended: Will be enabled by default: [Extended view], [Display thumbnails] and [Show clipboard].  You need TYPO3 >= 4.5.
+  # cat=module file/100; type=boolean; label=File list with enabled buttons: Recommended: Will be enabled by default: [Extended view], [Display thumbnails] and [Show clipboard].  You need TYPO3 >= 4.5.
 user_options_filelist_enableButtons = 1
 
   # cat=module web/100; type=boolean; label=Web page with reduced menu: Recommended: Quick Edit and Page Information will be removed.
 page_mod_web_layout_menu_function = 1
 
-  # cat=module web/101; type=boolean; label=Web list form with enabled buttons: Recommended: Will be enabled by default: [Extended view] and [Show clipboard]. [Localization view] won't be overridden. You need TYPO3 >= 4.5.
+  # cat=module web/101; type=boolean; label=Web list with enabled buttons: Recommended: Will be enabled by default: [Extended view] and [Show clipboard]. [Localization view] won't be overridden. You need TYPO3 >= 4.5.
 page_mod_web_list_enableButtons = 1
 
   # cat=pagetree/100; type=boolean; label=Pagetree with uids: Recommended: The items in the pagetree will displayed with their uids.

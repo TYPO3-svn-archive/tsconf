@@ -1,6 +1,11 @@
+1.3.0
+  14-01-25
+  Feature
+  * 55323: Big form fields for including TypoScript static templates
+
 1.2.0
   14-01-13
-  Features
+  Feature
   * #54966: TYPO3 6.1
 
 1.1.1

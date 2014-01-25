@@ -12,6 +12,7 @@ if (!defined ('TYPO3_MODE'))
   // INDEX
 
   // Set TYPO3 version
+  // Configuration by the extension manager
   // Add pagetree icons
 
 
@@ -28,6 +29,14 @@ $version = $version + ( ( int ) $bugfix ) * 1;
 $typo3Version = $version;
   // Set TYPO3 version as integer (sample: 4.7.7 -> 4007007)
   // Set TYPO3 version
+
+
+
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  //
+  // Configuration by the extension manager
+
+$confArr  = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['tsconf']);
 
 
 
@@ -294,5 +303,20 @@ switch( true )
 }
   // SWITCH  : TYPO3 version
   // Add pagetree icons
+
+
+
+  ////////////////////////////////////////////////////////////////////////////
+  //
+  // optimize sys_template
+
+if( $confArr['tca_systemplate'] )
+{
+  t3lib_div::loadTCA('sys_template');
+  $TCA['sys_template']['columns']['include_static_file']['config']['selectedListStyle'] = 'width:360px;';
+  $TCA['sys_template']['columns']['include_static_file']['config']['itemListStyle']     = 'width:360px;';
+  $TCA['sys_template']['columns']['include_static_file']['config']['size']              = '40';
+}
+  // optimize sys_template
 
 ?>

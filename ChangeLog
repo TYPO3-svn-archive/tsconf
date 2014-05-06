@@ -1,3 +1,8 @@
+1.4.0
+  14-05-07
+  Feature
+  * #58585: Fit it into TYPO3 6.2
+
 1.3.0
   14-01-25
   Feature
@@ -71,12 +76,12 @@
   11-01-26
   Improvement
   * Added to user TSconf
-    * options.clearCache.pages 
+    * options.clearCache.pages
 
 0.0.5
   11-01-20
   Bugfix
-  * Proper Manual 
+  * Proper Manual
 
 0.0.4
   11-01-19
@@ -104,7 +109,7 @@
   11-01-19
   Improvement
   * Added
-    * options.clearCache.pages 
+    * options.clearCache.pages
     * options.clearCache.all
 
 0.0.1

@@ -1,6 +1,6 @@
   /////////////////////////////////////////////////
   //
-  // Adding the admin panel
+  // Clear Cache System (from TYPO3 6.2)
 
 options.clearCache.system = 1
-  // Adding the admin panel
+  // Clear Cache System (from TYPO3 6.2)

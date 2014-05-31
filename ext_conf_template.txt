@@ -22,8 +22,8 @@ user_options_pagetreeuid = 1
   # cat=user/100; type=boolean; label=AdminPanel: Recommended: The backend user will haven a adminPanel in the frontend.
 user_adminpanel = 1
 
-  # cat=user/101; type=boolean; label=ClearCacheSystem: Recommended, if you are integrating extensions and develope TYPO3.
-user_clearcachesystem = 0
+  # cat=user/101; type=boolean; label=ClearCacheSystem: Recommended, if you are integrating extensions and develope TYPO3. FRom TYPO3 version 6.2.
+user_clearcachesystem = 1
 
   # cat=user/102; type=boolean; label=Enable cache cleaning: Recommended: The backend user is allowed to clean the whole TYPO3 cache. A thunderbolt - the cache icon - will be displayed in the right top corner.
 user_options_cache = 1

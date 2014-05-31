@@ -1,0 +1,6 @@
+  /////////////////////////////////////////////////
+  //
+  // Adding the admin panel
+
+options.clearCache.system = 1
+  // Adding the admin panel

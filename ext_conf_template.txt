@@ -4,7 +4,7 @@ page_tceform_ttconent = 1
   # cat=edit area - page/101; type=boolean; label=Simplify page properties: Recommended: Fields alias and contend_from_pid will be disabled.
 page_tceform_pages = 1
 
-  # cat=edit area - templates/102; type=boolean; label=Big form fields: Recommended: TypoScript templates: Display include static templates with place for upto 40 items and an enhanced width. 
+  # cat=edit area - templates/102; type=boolean; label=Big form fields: Recommended: TypoScript templates: Display include static templates with place for upto 40 items and an enhanced width.
 tca_systemplate = 1
 
   # cat=module file/100; type=boolean; label=File list with enabled buttons: Recommended: Will be enabled by default: [Extended view], [Display thumbnails] and [Show clipboard].  You need TYPO3 >= 4.5.
@@ -22,5 +22,8 @@ user_options_pagetreeuid = 1
   # cat=user/100; type=boolean; label=AdminPanel: Recommended: The backend user will haven a adminPanel in the frontend.
 user_adminpanel = 1
 
-  # cat=user/101; type=boolean; label=Enable cache cleaning: Recommended: The backend user is allowed to clean the whole TYPO3 cache. A thunderbolt - the cache icon - will be displayed in the right top corner.
+  # cat=user/101; type=boolean; label=ClearCacheSystem: Recommended, if you are integrating extensions and develope TYPO3.
+user_clearcachesystem = 0
+
+  # cat=user/102; type=boolean; label=Enable cache cleaning: Recommended: The backend user is allowed to clean the whole TYPO3 cache. A thunderbolt - the cache icon - will be displayed in the right top corner.
 user_options_cache = 1

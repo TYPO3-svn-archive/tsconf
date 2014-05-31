@@ -35,6 +35,11 @@ if ($_EXTCONF['user_adminpanel'])
   t3lib_extMgm::addUserTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tsconf/userTSconfig_adminPanel.txt">');
 }
 
+if ($_EXTCONF['user_clearcachesystem'])
+{
+  t3lib_extMgm::addUserTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tsconf/userTSconfig_clearCacheSystem.txt">');
+}
+
 if ($_EXTCONF['user_options_cache'])
 {
   t3lib_extMgm::addUserTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tsconf/userTSconfig_options_cache.txt">');

@@ -9,10 +9,10 @@ $LOCAL_LANG = array(
   ),
   'de' => array(
     'tceform.tt_content.header_layout'     => 'Format',
-    'tceform.tt_content.header_layout.0'   => 'Überschrift 1',
-    'tceform.tt_content.header_layout.2'   => 'Überschrift 2',
-    'tceform.tt_content.header_layout.3'   => 'Überschrift 3',
-    'tceform.tt_content.header_layout.100' => '[Überschrift nicht anzeigen]',
+    'tceform.tt_content.header_layout.0'   => '<![CDATA[Ü]]berschrift 1',
+    'tceform.tt_content.header_layout.2'   => '<![CDATA[Ü]]berschrift 2',
+    'tceform.tt_content.header_layout.3'   => '<![CDATA[Ü]]berschrift 3',
+    'tceform.tt_content.header_layout.100' => '[<![CDATA[Ü]]berschrift nicht anzeigen]',
   ),
 );
 ?>

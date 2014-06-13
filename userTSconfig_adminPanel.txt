@@ -4,9 +4,9 @@
 
 admPanel {
   enable {
-    edit = 1
+    edit    = 1
     preview = 1
-    cache = 1
+    cache   = 1
   }
   hide = 0
 }

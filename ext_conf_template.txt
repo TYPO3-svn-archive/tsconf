@@ -19,7 +19,7 @@ page_mod_web_list_enableButtons = 1
   # cat=pagetree/100; type=boolean; label=Pagetree with uids: Recommended: The items in the pagetree will displayed with their uids.
 user_options_pagetreeuid = 1
 
-  # cat=user/100; type=boolean; label=AdminPanel: Recommended: The backend user will haven a adminPanel in the frontend.
+  # cat=user/100; type=boolean; label=AdminPanel: Recommended: The backend user will have an adminPanel in the frontend.
 user_adminpanel = 1
 
   # cat=user/102; type=boolean; label=Enable general cache cleaning: Recommended: The backend user is allowed to clean the TYPO3 general cache. A thunderbolt - the cache icon - will be displayed in the right top corner.

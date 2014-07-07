@@ -30,6 +30,20 @@ if ($_EXTCONF['page_tceform_ttconent'])
   t3lib_extMgm::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tsconf/pageTSconfig_tceform_ttcontent.txt">');
 }
 
+switch( $_EXTCONF['page_mod_shared_deflangauge'] )
+{
+  case('de'):
+    t3lib_extMgm::addUserTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tsconf/pageTSconfig_mod_shared_defaultlang_de.txt">');
+    break;
+  case('en'):
+    t3lib_extMgm::addUserTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tsconf/pageTSconfig_mod_shared_defaultlang_en.txt">');
+    break;
+  case(null):
+  default:
+    // Don't include nothing
+    break;
+}
+
 if ($_EXTCONF['user_adminpanel'])
 {
   t3lib_extMgm::addUserTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tsconf/userTSconfig_adminPanel.txt">');

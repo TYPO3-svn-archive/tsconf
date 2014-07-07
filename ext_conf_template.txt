@@ -1,6 +1,9 @@
   # cat=edit area - content/100; type=boolean; label=Reduce headers: Recommended: Reduce headers from seven to four. Proper translation for headers.
 page_tceform_ttconent = 1
 
+  # cat=edit area - content/101; type=options[,en,de]; label=Default language icon: Set the default language icon to Englisch or German. Recommended, if you have a localised website and the default language is English or German.
+page_mod_shared_deflangauge =
+
   # cat=edit area - page/101; type=boolean; label=Simplify page properties: Recommended: Fields alias and contend_from_pid will be disabled.
 page_tceform_pages = 1
 

@@ -1,0 +1,6 @@
+mod {
+  SHARED {
+    defaultLanguageFlag = gb.gif
+    defaultLanguageLabel = English
+  }
+}

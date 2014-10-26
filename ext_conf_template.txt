@@ -1,31 +1,33 @@
-  # cat=edit area - content/100; type=boolean; label=Reduce headers: Recommended: Reduce headers from seven to four. Proper translation for headers.
-page_tceform_ttconent = 1
+  # cat=edit area - content/100; type=boolean; label=Reduce headers: [recommendend] Reduce headers from seven to four. Proper translation for headers.
+page_tceform_ttcontent = 1
+  # cat=edit area - content/101; type=boolean; label=Improve images: [recommendend] Enhance the maximum limit of the image property columns (imagecols) from 7 to 12. Move the image properties height and width from integer to string to enable values like 100c. You have to update your database once.
+tca_ttcontentimages = 1
 
   # cat=edit area - content/101; type=options[,en,de]; label=Default language icon: Set the default language icon to Englisch or German. Recommended, if you have a localised website and the default language is English or German.
 page_mod_shared_deflangauge =
 
-  # cat=edit area - page/101; type=boolean; label=Simplify page properties: Recommended: Fields alias and contend_from_pid will be disabled.
+  # cat=edit area - page/101; type=boolean; label=Simplify page properties: [recommendend] Fields alias and contend_from_pid will be disabled.
 page_tceform_pages = 1
 
-  # cat=edit area - templates/102; type=boolean; label=Big form fields: Recommended: TypoScript templates: Display include static templates with place for upto 40 items and an enhanced width.
+  # cat=edit area - templates/102; type=boolean; label=Big form fields: [recommendend] TypoScript templates: Display include static templates with place for upto 40 items and an enhanced width.
 tca_systemplate = 1
 
-  # cat=module file/100; type=boolean; label=File list with enabled buttons: Recommended: Will be enabled by default: [Extended view], [Display thumbnails] and [Show clipboard].  You need TYPO3 >= 4.5.
+  # cat=module file/100; type=boolean; label=File list with enabled buttons: [recommendend] Will be enabled by default: [Extended view], [Display thumbnails] and [Show clipboard].  You need TYPO3 >= 4.5.
 user_options_filelist_enableButtons = 1
 
-  # cat=module web/100; type=boolean; label=Web page with reduced menu: Recommended: Quick Edit and Page Information will be removed.
+  # cat=module web/100; type=boolean; label=Web page with reduced menu: [recommendend] Quick Edit and Page Information will be removed.
 page_mod_web_layout_menu_function = 1
 
-  # cat=module web/101; type=boolean; label=Web list with enabled buttons: Recommended: Will be enabled by default: [Extended view] and [Show clipboard]. [Localization view] won't be overridden. You need TYPO3 >= 4.5.
+  # cat=module web/101; type=boolean; label=Web list with enabled buttons: [recommendend] Will be enabled by default: [Extended view] and [Show clipboard]. [Localization view] won't be overridden. You need TYPO3 >= 4.5.
 page_mod_web_list_enableButtons = 1
 
-  # cat=pagetree/100; type=boolean; label=Pagetree with uids: Recommended: The items in the pagetree will displayed with their uids.
+  # cat=pagetree/100; type=boolean; label=Pagetree with uids: [recommendend] The items in the pagetree will displayed with their uids.
 user_options_pagetreeuid = 1
 
-  # cat=user/100; type=boolean; label=AdminPanel: Recommended: The backend user will have an adminPanel in the frontend.
+  # cat=user/100; type=boolean; label=AdminPanel: [recommendend] The backend user will have an adminPanel in the frontend.
 user_adminpanel = 1
 
-  # cat=user/102; type=boolean; label=Enable general cache cleaning: Recommended: The backend user is allowed to clean the TYPO3 general cache. A thunderbolt - the cache icon - will be displayed in the right top corner.
+  # cat=user/102; type=boolean; label=Enable general cache cleaning: [recommendend] The backend user is allowed to clean the TYPO3 general cache. A thunderbolt - the cache icon - will be displayed in the right top corner.
 user_options_cache = 1
 
   # cat=user/101; type=boolean; label=Enable system cache cleaning: Recommended, if you are integrating extensions and develop TYPO3. A thunderbolt - the cache icon - will be displayed in the right top corner. From TYPO3 version 6.2.

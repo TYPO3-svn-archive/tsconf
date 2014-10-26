@@ -1,3 +1,8 @@
+1.5.0
+  New Feature
+  * #62476: Enhance the maximum of the image property columns (imgcols) from 7 to 12
+	* #62475: Move the image properties height and width from integer to string to enable values like 100c.
+
 1.4.4
   14-07-07
   New Feature

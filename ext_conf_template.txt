@@ -1,7 +1,7 @@
   # cat=edit area - content/100; type=boolean; label=Reduce headers: [recommendend] Reduce headers from seven to four. Proper translation for headers.
 page_tceform_ttcontent = 1
-  # cat=edit area - content/101; type=boolean; label=Improve images: [recommendend] Enhance the maximum limit of the image property columns (imagecols) from 7 to 12. Move the image properties height and width from integer to string to enable values like 100c. You have to update your database once.
-tca_ttcontentimages = 1
+  # cat=edit area - content/101; type=options[Disabled,Default (recommended),Bootstrap]; label=Improve images: [recommendend] Enhance the maximum limit of the image property columns (imagecols) from 7 to 12. Enable cutting of images: Move the image properties height and width from integer to string. You can enter values like 100c (c for cut). You have to update your database once. If you are using TYPO3 without a responsive framework, please select [default] for image improvement.
+tca_ttcontentimages = Default (recommended)
 
   # cat=edit area - content/101; type=options[,en,de]; label=Default language icon: Set the default language icon to Englisch or German. Recommended, if you have a localised website and the default language is English or German.
 page_mod_shared_deflangauge =

@@ -268,29 +268,45 @@ switch ( true )
 ////////////////////////////////////////////////////////////////////////////
 //
 // improve tt_content
-
-if ( $confArr[ 'tca_ttcontentimages' ] )
+// #62476, 141026, dwildt, +
+switch ( $confArr[ 'tca_ttcontentimages' ] )
 {
-
-  \TYPO3\CMS\Core\Utility\GeneralUtility::loadTCA( 'tt_content' );
-
-  // #62476, 141026, dwildt, 10+
-  // default: $TCA['tt_content']['columns']['imageheight']['config']['eval'] = 'int';
-  unset( $TCA[ 'tt_content' ][ 'columns' ][ 'imageheight' ][ 'config' ][ 'eval' ] );
-  unset( $TCA[ 'tt_content' ][ 'columns' ][ 'imagewidth' ][ 'config' ][ 'eval' ] );
-
-  // #62476, 141026, dwildt, 10+
-//  $GLOBALS[ 'TCA' ][ 'tt_content' ][ 'columns' ][ 'imagecols' ][ 'config' ][ 'items' ][ '8' ][ '0' ] = 8;
-//  $GLOBALS[ 'TCA' ][ 'tt_content' ][ 'columns' ][ 'imagecols' ][ 'config' ][ 'items' ][ '8' ][ '1' ] = 8;
-//  $GLOBALS[ 'TCA' ][ 'tt_content' ][ 'columns' ][ 'imagecols' ][ 'config' ][ 'items' ][ '9' ][ '0' ] = 9;
-//  $GLOBALS[ 'TCA' ][ 'tt_content' ][ 'columns' ][ 'imagecols' ][ 'config' ][ 'items' ][ '9' ][ '1' ] = 9;
-//  $GLOBALS[ 'TCA' ][ 'tt_content' ][ 'columns' ][ 'imagecols' ][ 'config' ][ 'items' ][ '10' ][ '0' ] = 10;
-//  $GLOBALS[ 'TCA' ][ 'tt_content' ][ 'columns' ][ 'imagecols' ][ 'config' ][ 'items' ][ '10' ][ '1' ] = 10;
-//  $GLOBALS[ 'TCA' ][ 'tt_content' ][ 'columns' ][ 'imagecols' ][ 'config' ][ 'items' ][ '11' ][ '0' ] = 11;
-//  $GLOBALS[ 'TCA' ][ 'tt_content' ][ 'columns' ][ 'imagecols' ][ 'config' ][ 'items' ][ '11' ][ '1' ] = 11;
-  $GLOBALS[ 'TCA' ][ 'tt_content' ][ 'columns' ][ 'imagecols' ][ 'config' ][ 'items' ][ '12' ][ '0' ] = 12;
-  $GLOBALS[ 'TCA' ][ 'tt_content' ][ 'columns' ][ 'imagecols' ][ 'config' ][ 'items' ][ '12' ][ '1' ] = 12;
+  case('Disabled'):
+    break;
+  case('Bootstrap'):
+  case('Default (recommended)'):
+  default:
+    \TYPO3\CMS\Core\Utility\GeneralUtility::loadTCA( 'tt_content' );
+    // default: $TCA['tt_content']['columns']['imageheight']['config']['eval'] = 'int';
+    unset( $TCA[ 'tt_content' ][ 'columns' ][ 'imageheight' ][ 'config' ][ 'eval' ] );
+    unset( $TCA[ 'tt_content' ][ 'columns' ][ 'imagewidth' ][ 'config' ][ 'eval' ] );
+    break;
 }
+switch ( $confArr[ 'tca_ttcontentimages' ] )
+{
+  case('Disabled'):
+    break;
+  case('Bootstrap'):
+    $GLOBALS[ 'TCA' ][ 'tt_content' ][ 'columns' ][ 'imagecols' ][ 'config' ][ 'items' ][ '12' ][ '0' ] = 12;
+    $GLOBALS[ 'TCA' ][ 'tt_content' ][ 'columns' ][ 'imagecols' ][ 'config' ][ 'items' ][ '12' ][ '1' ] = 12;
+    break;
+  case('Default (recommended)'):
+  default:
+    $GLOBALS[ 'TCA' ][ 'tt_content' ][ 'columns' ][ 'imagecols' ][ 'config' ][ 'items' ][ '8' ][ '0' ] = 8;
+    $GLOBALS[ 'TCA' ][ 'tt_content' ][ 'columns' ][ 'imagecols' ][ 'config' ][ 'items' ][ '8' ][ '1' ] = 8;
+    $GLOBALS[ 'TCA' ][ 'tt_content' ][ 'columns' ][ 'imagecols' ][ 'config' ][ 'items' ][ '9' ][ '0' ] = 9;
+    $GLOBALS[ 'TCA' ][ 'tt_content' ][ 'columns' ][ 'imagecols' ][ 'config' ][ 'items' ][ '9' ][ '1' ] = 9;
+    $GLOBALS[ 'TCA' ][ 'tt_content' ][ 'columns' ][ 'imagecols' ][ 'config' ][ 'items' ][ '10' ][ '0' ] = 10;
+    $GLOBALS[ 'TCA' ][ 'tt_content' ][ 'columns' ][ 'imagecols' ][ 'config' ][ 'items' ][ '10' ][ '1' ] = 10;
+    $GLOBALS[ 'TCA' ][ 'tt_content' ][ 'columns' ][ 'imagecols' ][ 'config' ][ 'items' ][ '11' ][ '0' ] = 11;
+    $GLOBALS[ 'TCA' ][ 'tt_content' ][ 'columns' ][ 'imagecols' ][ 'config' ][ 'items' ][ '11' ][ '1' ] = 11;
+    $GLOBALS[ 'TCA' ][ 'tt_content' ][ 'columns' ][ 'imagecols' ][ 'config' ][ 'items' ][ '12' ][ '0' ] = 12;
+    $GLOBALS[ 'TCA' ][ 'tt_content' ][ 'columns' ][ 'imagecols' ][ 'config' ][ 'items' ][ '12' ][ '1' ] = 12;
+    break;
+}
+
+
+
 // improve tt_content
 ////////////////////////////////////////////////////////////////////////////
 //

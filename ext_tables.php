@@ -319,8 +319,8 @@ if ( $confArr[ 'tca_systemplate' ] )
   // #i0006, 141208, dwildt, -
   // Breaking: #61785 - loadTCA function in GeneralUtility removed
   //\TYPO3\CMS\Core\Utility\GeneralUtility::loadTCA( 'sys_template' );
-  $TCA[ 'sys_template' ][ 'columns' ][ 'include_static_file' ][ 'config' ][ 'selectedListStyle' ] = 'width:360px;';
-  $TCA[ 'sys_template' ][ 'columns' ][ 'include_static_file' ][ 'config' ][ 'itemListStyle' ] = 'width:360px;';
+  $TCA[ 'sys_template' ][ 'columns' ][ 'include_static_file' ][ 'config' ][ 'selectedListStyle' ] = 'width:385px;';
+  $TCA[ 'sys_template' ][ 'columns' ][ 'include_static_file' ][ 'config' ][ 'itemListStyle' ] = 'width:385px;';
   $TCA[ 'sys_template' ][ 'columns' ][ 'include_static_file' ][ 'config' ][ 'size' ] = '40';
 }
 // improve sys_template

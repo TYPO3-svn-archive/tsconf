@@ -1,3 +1,14 @@
+1.6.0
+  14-10-27
+  Feature
+  * #i0006: TYPO3 7.0
+            * TYPO3\CMS\Backend\Sprite\SpriteManager
+
+1.5.2
+  14-11-22
+  Bugfix
+  * #i0006: Class t3lib_extMgm is moved to \TYPO3\CMS\Core\Utility\ExtensionManagementUtility
+
 1.5.0
   14-10-27
   New Feature

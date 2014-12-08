@@ -276,7 +276,9 @@ switch ( $confArr[ 'tca_ttcontentimages' ] )
   case('Bootstrap'):
   case('Default (recommended)'):
   default:
-    \TYPO3\CMS\Core\Utility\GeneralUtility::loadTCA( 'tt_content' );
+    // #i0006, 141208, dwildt, -
+    // Breaking: #61785 - loadTCA function in GeneralUtility removed
+    //\TYPO3\CMS\Core\Utility\GeneralUtility::loadTCA( 'tt_content' );
     // default: $TCA['tt_content']['columns']['imageheight']['config']['eval'] = 'int';
     unset( $TCA[ 'tt_content' ][ 'columns' ][ 'imageheight' ][ 'config' ][ 'eval' ] );
     unset( $TCA[ 'tt_content' ][ 'columns' ][ 'imagewidth' ][ 'config' ][ 'eval' ] );

@@ -80,6 +80,10 @@ if ( $_EXTCONF[ 'user_options_cache' ] )
   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig( '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tsconf/userTSconfig_options_cache.txt">' );
 }
 
+if ( $_EXTCONF[ 'user_options_defaultUploadFolder' ] )
+{
+  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig( '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tsconf/userTSconfig_options_defaultUploadFolder.txt">' );
+}
 if ( $_EXTCONF[ 'user_options_pagetreeuid' ] )
 {
   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig( '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tsconf/userTSconfig_options_pagetreeuid.txt">' );

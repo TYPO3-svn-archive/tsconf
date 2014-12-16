@@ -21,9 +21,6 @@ page_mod_web_layout_menu_function = 1
   # cat=module web/101; type=boolean; label=Web list with enabled buttons: [recommendend] Will be enabled by default: [Extended view] and [Show clipboard]. [Localization view] won't be overridden. You need TYPO3 >= 4.5.
 page_mod_web_list_enableButtons = 1
 
-  # cat=pagetree/100; type=boolean; label=Default Upload Folder: [recommendend] Sets the default upload folder to 1:user_upload/, where 1 is the uid of your fileadmin storage. The upload button in content elements is missing without a default upload folder. If you have configured a default upload folder, leave this option empty.
-user_options_defaultUploadFolder = 1
-
   # cat=pagetree/100; type=boolean; label=Pagetree with uids: [recommendend] The items in the pagetree will displayed with their uids.
 user_options_pagetreeuid = 1
 
@@ -35,3 +32,6 @@ user_options_cache = 1
 
   # cat=user/101; type=boolean; label=Enable system cache cleaning: Recommended, if you are integrating extensions and develop TYPO3. A thunderbolt - the cache icon - will be displayed in the right top corner. From TYPO3 version 6.2.
 user_clearcachesystem = 1
+
+  # cat=user/100; type=boolean; label=Default Upload Folder: [recommendend] Sets the default upload folder to 1:user_upload/, where 1 is the uid of your fileadmin storage. The upload button in content elements is missing without a default upload folder. If you have configured a default upload folder, leave this option empty.
+user_options_defaultUploadFolder = 1

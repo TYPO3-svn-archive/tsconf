@@ -1,0 +1,8 @@
+  /////////////////////////////////////////////////
+  //
+  // Display page uids in the page tree
+
+options {
+  defaultUploadFolder=1:user_upload/ 
+}
+  // Display page uids in the page tree

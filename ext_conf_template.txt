@@ -33,5 +33,5 @@ user_options_cache = 1
   # cat=user/101; type=boolean; label=Enable system cache cleaning: Recommended, if you are integrating extensions and develop TYPO3. A thunderbolt - the cache icon - will be displayed in the right top corner. From TYPO3 version 6.2.
 user_clearcachesystem = 1
 
-  # cat=user/100; type=boolean; label=Default Upload Folder: [recommendend] Sets the default upload folder to 1:user_upload/, where 1 is the uid of your fileadmin storage. The upload button in content elements is missing without a default upload folder. If you have configured a default upload folder, leave this option empty.
-user_options_defaultUploadFolder = 1
+  # cat=user/100; type=boolean; label=Default Upload Folder: Sets the default upload folder to 1:user_upload/, where 1 is the uid of your fileadmin storage. This option is allowed only, if all backend users have access to fileadmin/user_upload by a filemount! The upload button in content elements is missing without a default upload folder. See details at: http://docs.typo3.org/typo3cms/TSconfigReference/UserTsconfig/Options/
+user_options_defaultUploadFolder = 0

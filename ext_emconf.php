@@ -5,7 +5,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'description' => 'Configure the TSconfig for your pages and users with the mouse! tsconf offers the eight most commonly used porperties like page tree uids, activated extended view, activated clipboard, activated admin panel and cache management for editors among others.',
 	'category' => 'be',
 	'shy' => 0,
-	'version' => '6.0.0',
+	'version' => '6.0.1',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
@@ -24,7 +24,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'CGLcompliance_note' => '',
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '6.0.0-7.0.99',
+			'typo3' => '4.5.0-7.0.99',
 		),
 		'conflicts' => array(
 		),

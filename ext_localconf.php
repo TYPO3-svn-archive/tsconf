@@ -7,6 +7,8 @@ $version = $version + ( ( int ) $sub ) * 1000;
 $version = $version + ( ( int ) $bugfix ) * 1;
 $typo3Version = $version;
 
+require_once( PATH_typo3conf . 'ext/tsconf/Configuration/ExtLocalconf/_EXTCONF.php' );
+
 // SWITCH  : TYPO3 version
 switch ( true )
 {
@@ -17,5 +19,3 @@ switch ( true )
     require_once( PATH_typo3conf . 'ext/tsconf/Configuration/ExtLocalconf/Default/ext_localconf.php' );
     break;
 }
-
-?>

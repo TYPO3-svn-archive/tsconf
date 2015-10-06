@@ -1,37 +1,35 @@
-  # cat=edit area - content/100; type=boolean; label=Reduce headers: [recommendend] Reduce headers from seven to four. Proper translation for headers.
+  # cat=edit area/100;    type=boolean; label=Reduce headers: [recommendend] Reduce headers from seven to four. Proper translation for headers.
 page_tceform_ttcontent = 1
-  # cat=edit area - content/101; type=options[Disabled,Default (recommended),Bootstrap]; label=Improve images: [recommendend] Enhance the maximum limit of the image property columns (imagecols) from 7 to 12. Enable cutting of images: Move the image properties height and width from integer to string. You can enter values like 100c (c for cut). You have to update your database once. If you are using TYPO3 without a responsive framework, please select [default] for image improvement.
+  # cat=edit area/101;    type=options[Disabled,Default (recommended),Bootstrap]; label=Improve images: [recommendend] Enhance the maximum limit of the image property columns (imagecols) from 7 to 12. Enable cutting of images: Move the image properties height and width from integer to string. You can enter values like 100c (c for cut). You have to update your database once. If you are using TYPO3 without a responsive framework, please select [default] for image improvement.
 tca_ttcontentimages = Default (recommended)
-
-  # cat=edit area - content/101; type=options[,en,de]; label=Default language icon: Set the default language icon to Englisch or German. Recommended, if you have a localised website and the default language is English or German.
+  # cat=edit area/102;    type=options[,en,de]; label=Default language icon: Set the default language icon to Englisch or German. Recommended, if you have a localised website and the default language is English or German.
 page_mod_shared_deflangauge =
-
-  # cat=edit area - page/101; type=boolean; label=Simplify page properties: [recommendend] Fields alias and contend_from_pid will be disabled.
-page_tceform_pages = 1
-
-  # cat=edit area - templates/102; type=boolean; label=Big form fields: [recommendend] TypoScript templates: Display include static templates with place for upto 40 items and an enhanced width.
+  # cat=edit area/103;    type=boolean; label=Simplify page properties: Fields alias and contend_from_pid will be disabled.
+page_tceform_pages = 0
+  # cat=edit area/104;    type=boolean; label=Big form fields: [recommendend] TypoScript templates: Display include static templates with place for upto 40 items and an enhanced width.
 tca_systemplate = 1
 
-  # cat=module file/100; type=boolean; label=File list with enabled buttons: [recommendend] Will be enabled by default: [Extended view], [Display thumbnails] and [Show clipboard].  You need TYPO3 >= 4.5.
+  # cat=module file/200;  type=boolean; label=File list with enabled buttons: [recommendend] Will be enabled by default: [Extended view], [Display thumbnails] and [Show clipboard].  You need TYPO3 >= 4.5.
 user_options_filelist_enableButtons = 1
 
-  # cat=module web/100; type=boolean; label=Web page with reduced menu: [recommendend] Quick Edit and Page Information will be removed.
+  # cat=module web/300;   type=boolean; label=Web page with reduced menu: [recommendend] Quick Edit and Page Information will be removed.
 page_mod_web_layout_menu_function = 1
-
-  # cat=module web/101; type=boolean; label=Web list with enabled buttons: [recommendend] Will be enabled by default: [Extended view] and [Show clipboard]. [Localization view] won't be overridden. You need TYPO3 >= 4.5.
+  # cat=module web/301;   type=boolean; label=Web list with enabled buttons: [recommendend] Will be enabled by default: [Extended view] and [Show clipboard]. [Localization view] won't be overridden. You need TYPO3 >= 4.5.
 page_mod_web_list_enableButtons = 1
 
-  # cat=pagetree/100; type=boolean; label=Pagetree with uids: [recommendend] The items in the pagetree will displayed with their uids.
+  # cat=my icons/401;    type=string; label=Path: Path to your configuration file for including individual icons. Without beginning slash. Default: typo3conf/ext/tsconf/Resources/Private/myPageTreeIcons.php. Copy this file to the fileadmin directory and adapt it to your needs. Example: fileadmin/mytsconf/myPageTreeIcons.php
+mytsconf.path = typo3conf/ext/tsconf/Resources/Private/myPageTreeIcons.php
+
+  # cat=pagetree/500;     type=boolean; label=uids: [recommendend] The items in the pagetree will displayed with their uids.
 user_options_pagetreeuid = 1
+  # cat=pagetree/501;     type=boolean; label=Enhanced context menu: [recommendend] Enhances the context menu with page actions like Hide in Menus and Exclude from Search
+pagetree_enhanced_context_menu = 1
 
-  # cat=user/100; type=boolean; label=AdminPanel: [recommendend] The backend user will have an adminPanel in the frontend.
+  # cat=user/600;         type=boolean; label=AdminPanel: [recommendend] The backend user will have an adminPanel in the frontend.
 user_adminpanel = 1
-
-  # cat=user/102; type=boolean; label=Enable general cache cleaning: [recommendend] The backend user is allowed to clean the TYPO3 general cache. A thunderbolt - the cache icon - will be displayed in the right top corner.
+  # cat=user/601;         type=boolean; label=Enable general cache cleaning: [recommendend] The backend user is allowed to clean the TYPO3 general cache. A thunderbolt - the cache icon - will be displayed in the right top corner.
 user_options_cache = 1
-
-  # cat=user/101; type=boolean; label=Enable system cache cleaning: Recommended, if you are integrating extensions and develop TYPO3. A thunderbolt - the cache icon - will be displayed in the right top corner. From TYPO3 version 6.2.
+  # cat=user/602;         type=boolean; label=Enable system cache cleaning: Recommended, if you are integrating extensions and develop TYPO3. A thunderbolt - the cache icon - will be displayed in the right top corner. From TYPO3 version 6.2.
 user_clearcachesystem = 1
-
-  # cat=user/100; type=boolean; label=Default Upload Folder: Sets the default upload folder to 1:user_upload/, where 1 is the uid of your fileadmin storage. This option is allowed only, if all backend users have access to fileadmin/user_upload by a filemount! The upload button in content elements is missing without a default upload folder. See details at: http://docs.typo3.org/typo3cms/TSconfigReference/UserTsconfig/Options/
+  # cat=user/603;         type=boolean; label=Default Upload Folder: Sets the default upload folder to 1:user_upload/, where 1 is the uid of your fileadmin storage. This option is allowed only, if all backend users have access to fileadmin/user_upload by a filemount! The upload button in content elements is missing without a default upload folder. See details at: http://docs.typo3.org/typo3cms/TSconfigReference/UserTsconfig/Options/
 user_options_defaultUploadFolder = 0

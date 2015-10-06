@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file source-language="de" datatype="plaintext" original="messages" date="2014-03-21T20:06:40Z" product-name="tsconf">
+    <header/>
+    <body>
+      <trans-unit id="setHiddenInMenus">
+        <source>Hide page in menus</source>
+        <target>Verstecke Seite in Menüs</target>
+      </trans-unit>
+      <trans-unit id="setVisibleInMenus">
+        <source>Show page in menus</source>
+        <target>Zeige Seite in Menüs</target>
+      </trans-unit>
+      <trans-unit id="setNoForceSsl">
+        <source>Do not force SSL</source>
+        <target>SSL nicht erforderlich</target>
+      </trans-unit>
+      <trans-unit id="setForceSsl">
+        <source>Force SSL</source>
+        <target>Erzwinge SSL</target>
+      </trans-unit>
+      <trans-unit id="setExcludeFromSearch">
+        <source>Von Suche ausschließen</source>
+      </trans-unit>
+      <trans-unit id="setIncludeInSearch">
+        <source>In Suche einschließen</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

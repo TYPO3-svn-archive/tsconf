@@ -1,8 +1,6 @@
 <?php
 
 //$typo_db_extTableDef_script = 'extTables.php';
-// unserializing the configuration so we can use it here:
-$_EXTCONF = unserialize( $_EXTCONF );
 
 if ( $_EXTCONF[ 'page_mod_web_layout_menu_function' ] )
 {

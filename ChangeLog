@@ -1,3 +1,17 @@
+6.2.0
+  15-10-06
+  Feature
+  * #70445: Enhances the context menu of the pagetree
+  Improvement
+  * #i0009: Default value of page_tceform_pages is moved from 1 to 0
+
+6.1.0
+  15-03-31
+  Feature
+  * #66176: Individual Icons
+  Bugfix
+  * #66211: No items in TYPO3 4.x
+
 6.0.1
   15-01-20
   Feature

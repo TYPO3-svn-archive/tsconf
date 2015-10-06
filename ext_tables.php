@@ -5,9 +5,6 @@ if ( !defined( 'TYPO3_MODE' ) )
   die( 'Access denied.' );
 }
 
-
-
-
 ////////////////////////////////////////////////////////////////////////////
 //
 // INDEX
@@ -29,18 +26,10 @@ $typo3Version = $version;
 //
 // Configuration by the extension manager
 
-$confArr = unserialize( $GLOBALS[ 'TYPO3_CONF_VARS' ][ 'EXT' ][ 'extConf' ][ 'tsconf' ] );
+require_once( PATH_typo3conf . 'ext/tsconf/Configuration/ExtTables/confArray.php' );
 
-// SWITCH  : TYPO3 version
-switch ( true )
-{
-  case( $typo3Version < 6000000 ):
-    require_once( PATH_typo3conf . 'ext/tsconf/Configuration/ExtTables/4x/PageTreeIcons.php' );
-    break;
-  default:
-    require_once( PATH_typo3conf . 'ext/tsconf/Configuration/ExtTables/Default/PageTreeIcons.php' );
-    break;
-}
+require_once( PATH_typo3conf . 'ext/tsconf/Configuration/ExtTables/ext_tables.php' );
+
 // SWITCH  : TYPO3 version
 // Add pagetree icons
 ////////////////////////////////////////////////////////////////////////////
@@ -102,4 +91,15 @@ if ( $confArr[ 'tca_systemplate' ] )
   $TCA[ 'sys_template' ][ 'columns' ][ 'include_static_file' ][ 'config' ][ 'size' ] = '40';
 }
 // improve sys_template
-?>
+
+// #70445, 151006, dwildt, 9+
+if ( TYPO3_MODE == 'BE' && $confArr[ 'pagetree_enhanced_context_menu' ])
+{
+  $extPath = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath( $_EXTKEY );
+  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerExtDirectComponent(
+          'TYPO3.Tsconf.ClickmenuAction', 'Netzmacher\\Tsconf\\Hooks\\ClickMenuAction'
+  );
+  $GLOBALS[ 'TBE_MODULES' ][ '_configuration' ][ $_EXTKEY ][ 'jsFiles' ][ 'TreeActions' ] = 'EXT:tsconf/Resources/Public/Js/TreeActions.js';
+  \Netzmacher\Tsconf\Hooks\ClickMenuAction::addContextMenuItems();
+}
+

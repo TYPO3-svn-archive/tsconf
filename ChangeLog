@@ -1,3 +1,8 @@
+6.2.1
+  15-10-21
+  Bugfix
+  * #i0009: JavaScript code was missing for enhanced context menu of the pagetree
+
 6.2.0
   15-10-06
   Feature

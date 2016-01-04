@@ -100,6 +100,6 @@ if ( TYPO3_MODE == 'BE' && $confArr[ 'pagetree_enhanced_context_menu' ])
           'TYPO3.Tsconf.ClickmenuAction', 'Netzmacher\\Tsconf\\Hooks\\ClickMenuAction'
   );
   $GLOBALS[ 'TBE_MODULES' ][ '_configuration' ][ $_EXTKEY ][ 'jsFiles' ][ 'TreeActions' ] = 'EXT:tsconf/Resources/Public/Js/TreeActions.js';
-  \Netzmacher\Tsconf\Hooks\ClickMenuAction::addContextMenuItems();
+  Netzmacher\Tsconf\Hooks\ClickMenuAction::addContextMenuItems();
 }
 

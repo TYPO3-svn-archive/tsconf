@@ -3,6 +3,8 @@
   Improvement
   * #i0010: Update for TYPO3 7.6
             * t3lib_extMgm is moved to \TYPO3\CMS\Core\Utility\ExtensionManagementUtility
+            * pagetreeNode is disabled because of error:
+              * Fatal error: Class 'Netzmacher\Tsconf\Xclass\PagetreeNode' not found in /opt/typo3_src-7.6.2/typo3/sysext/core/Classes/Utility/GeneralUtility.php on line 4508
 
 6.2.1
   15-10-21

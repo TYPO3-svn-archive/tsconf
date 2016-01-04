@@ -17,7 +17,7 @@ if ( !defined( 'TYPO3_MODE' ) )
  *  Code is just for checking, if the Netzmacher icon will displayed
  * ************************************************************* */
 
-$myExtIconPath = t3lib_extMgm::extRelPath( $_EXTKEY ) . 'Resources/Public/Icons/';
+$myExtIconPath = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath( $_EXTKEY ) . 'Resources/Public/Icons/';
 
 $TCA[ 'pages' ][ 'columns' ][ 'module' ][ 'config' ][ 'items' ][] = array( 'Netzmacher', 'myNetzm', $myExtIconPath . 'netzmacher_icon.gif' );
 
@@ -55,7 +55,7 @@ switch ( true )
  *        here: fileadmin/mytsconf/myPageTreeIcons.php
  * ************************************************************* */
 
-//$myExtIconPath = t3lib_extMgm::extRelPath( $_EXTKEY ) . '../fileadmin/mytsconf/';
+//$myExtIconPath = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath( $_EXTKEY ) . '../fileadmin/mytsconf/';
 //
 //$TCA[ 'pages' ][ 'columns' ][ 'module' ][ 'config' ][ 'items' ][] = array(
 //  'My icon', 'myIcon', $myExtIconPath . 'my.gif'

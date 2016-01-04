@@ -5,7 +5,7 @@ if ( !defined( 'TYPO3_MODE' ) )
   die( 'Access denied.' );
 }
 
-$extIconPath = t3lib_extMgm::extRelPath( $_EXTKEY ) . 'ext_icons/';
+$extIconPath = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath( $_EXTKEY ) . 'ext_icons/';
 
 // Own Icons
 // #66176, 150331, dwildt, +

@@ -11,7 +11,7 @@ if ( !defined( 'TYPO3_MODE' ) )
 // #70445, 151006, dwildt, 6+
 if ( TYPO3_MODE == 'BE' && $_EXTCONF[ 'pagetree_enhanced_context_menu' ] )
 {
-  // ##i0010, dwildt, 3-
+  // ##i0010, dwildt, 3-: Fatal error: Class 'Netzmacher\Tsconf\Xclass\PagetreeNode' not found in /opt/typo3_src-7.6.2/typo3/sysext/core/Classes/Utility/GeneralUtility.php on line 4508
 //  $GLOBALS[ 'TYPO3_CONF_VARS' ][ 'SYS' ][ 'Objects' ][ 'TYPO3\\CMS\\Backend\\Tree\\Pagetree\\PagetreeNode' ] = array(
 //    'className' => '\\Netzmacher\\Tsconf\\Xclass\\PagetreeNode',
 //  );

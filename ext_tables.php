@@ -95,11 +95,12 @@ if ( $confArr[ 'tca_systemplate' ] )
 // #70445, 151006, dwildt, 9+
 if ( TYPO3_MODE == 'BE' && $confArr[ 'pagetree_enhanced_context_menu' ])
 {
-  $extPath = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath( $_EXTKEY );
-  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerExtDirectComponent(
-          'TYPO3.Tsconf.ClickmenuAction', '\\Netzmacher\\Tsconf\\Hooks\\ClickMenuAction'
-  );
-  $GLOBALS[ 'TBE_MODULES' ][ '_configuration' ][ $_EXTKEY ][ 'jsFiles' ][ 'TreeActions' ] = 'EXT:tsconf/Resources/Public/Js/TreeActions.js';
-  \Netzmacher\Tsconf\Hooks\ClickMenuAction::addContextMenuItems();
+  // ##i0010, dwildt, 6-: Fatal error: Class 'Netzmacher\Tsconf\Hooks\ClickMenuAction' not found in /var/www/www.7x.typo3-org.de/typo3/typo3conf/ext/tsconf/ext_tables.php on line 103
+//  $extPath = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath( $_EXTKEY );
+//  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerExtDirectComponent(
+//          'TYPO3.Tsconf.ClickmenuAction', '\\Netzmacher\\Tsconf\\Hooks\\ClickMenuAction'
+//  );
+//  $GLOBALS[ 'TBE_MODULES' ][ '_configuration' ][ $_EXTKEY ][ 'jsFiles' ][ 'TreeActions' ] = 'EXT:tsconf/Resources/Public/Js/TreeActions.js';
+//  \Netzmacher\Tsconf\Hooks\ClickMenuAction::addContextMenuItems();
 }
 

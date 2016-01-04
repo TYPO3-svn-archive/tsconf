@@ -12,7 +12,7 @@ if ( !defined( 'TYPO3_MODE' ) )
 if ( TYPO3_MODE == 'BE' && $_EXTCONF[ 'pagetree_enhanced_context_menu' ] )
 {
   $GLOBALS[ 'TYPO3_CONF_VARS' ][ 'SYS' ][ 'Objects' ][ 'TYPO3\\CMS\\Backend\\Tree\\Pagetree\\PagetreeNode' ] = array(
-    'className' => '\\Netzmacher\\Tsconf\\Xclass\\PagetreeNode',
+    'className' => 'Netzmacher\\Tsconf\\Xclass\\PagetreeNode',
   );
 }
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace \Netzmacher\Tsconf\Xclass;
+namespace Netzmacher\Tsconf\Xclass;
 
 /* * *************************************************************
  *  Copyright notice

@@ -82,7 +82,6 @@ if ( $_EXTCONF[ 'user_adminpanel' ] )
 {
   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig( '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tsconf/userTSconfig_adminPanel.txt">' );
 }
-
 if ( $_EXTCONF[ 'user_clearcachesystem' ] )
 {
   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig( '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tsconf/userTSconfig_clearCacheSystem.txt">' );
@@ -101,4 +100,3 @@ if ( $_EXTCONF[ 'user_options_pagetreeuid' ] )
 {
   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig( '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tsconf/userTSconfig_options_pagetreeuid.txt">' );
 }
-?>

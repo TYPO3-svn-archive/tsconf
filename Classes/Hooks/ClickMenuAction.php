@@ -1,6 +1,6 @@
 <?php
 
-namespace \Netzmacher\Tsconf\Hooks;
+namespace Netzmacher\Tsconf\Hooks;
 
 use TYPO3\CMS\Backend\Tree\Pagetree\Commands;
 use TYPO3\CMS\Backend\Tree\Pagetree\PagetreeNode;

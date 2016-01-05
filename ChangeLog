@@ -1,9 +1,12 @@
+Bug pagetreeicons
+See: https://wiki.typo3.org/TYPO3.CMS/Releases/7.5/Feature#BitmapIconProvider
+
 6.3.0
   16-01-04
   Improvement
   * #i0010: Update for TYPO3 7.6
             * t3lib_extMgm is moved to \TYPO3\CMS\Core\Utility\ExtensionManagementUtility
-            * pagetreeNode is disabled because of class not found error
+            * ClickMenuAction and PagetreeNode is disabled because of class not found error
 
 6.2.1
   15-10-21
